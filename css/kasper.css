@@ -571,3 +571,27 @@ header .contener nav .form i {
     }
 }
 /* End Video */
+
+/* Start About */
+.about {
+    padding-top: var(--section-padding);
+    overflow: hidden;
+    text-align: center;
+}
+
+.about img {
+    position: relative;
+    max-width: 100%;
+    bottom: -120px;
+    margin-top: -120px;
+    left: -30px;
+}
+
+@media (max-width: 767px) {
+    .about img {
+        bottom: -60px;
+        margin-top: -60px;
+        left: -10px;
+    }
+}
+/* End About */
