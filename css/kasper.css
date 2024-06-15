@@ -3,6 +3,7 @@
     --main-color: #19c8fa;
     --secnd-color: #0f738fc3;
     --section-padding: 100px;
+    --low-text: #777;
 }
 /* End Var */
 /* Start Globel Rules */
@@ -93,7 +94,7 @@ ul {
     margin: 0 auto 100px;
     max-width: 100%;
     line-height: 2;
-    color: #777;
+    color: var(--low-text);
 }
 /* End Componant */
 
@@ -345,7 +346,7 @@ header .contener nav .form i {
 }
 .Services .srv-box p {
     line-height: 2;
-    color: #777;
+    color: var(--low-text);
 }
 /* End Services */
 
@@ -669,3 +670,164 @@ header .contener nav .form i {
     font-size: 14px;
 }
 /* End Stats */
+
+/* Start Skills */
+.skills{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.skills .contener{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 992px){
+    .skills .contener > div{
+        flex-basis: 45%;
+    }
+}
+
+.skills .contener >div >h3{
+    font-weight: normal;
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.skills .contener >div >p {
+    color: var(--low-text);
+    text-align: center;
+    line-height: 2;
+    margin: 0 0 60px;
+}
+
+.skills .contener .testimonials .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.skills .contener .testimonials .content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+    .skills .contener .testimonials .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills .contener .testimonials .content img {
+        margin: 0 auto 30px;
+    }
+}
+
+.skills .contener .testimonials .content .text {
+    line-height: 1.8;
+    border-bottom: 1px solid #ccc;
+}
+.skills .contener .testimonials .content .text p {
+    color: var(--low-text);
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.skills .contener .testimonials .bullet {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.skills .contener .testimonials .bullet li {
+    border: 1px solid var(--low-text);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.skills .contener .testimonials .bullet li.active{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
+.skills .contener .our-skills .prog-holder {
+    margin-bottom: 40px;
+}
+.skills .contener .our-skills .prog-holder h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.skills .contener .our-skills .prog-holder .prog {
+    background-color: #dedadc;
+    height: 30px;
+}
+.skills .contener .our-skills .prog-holder .prog span {
+    display: block;
+    height: 100%;
+    background-color: var(--main-color);
+    position: relative;
+}
+.skills .contener .our-skills .prog-holder .prog span::before {
+    content: attr(data-progres);
+    position: absolute;
+    background-color: #1f2021;
+    color: white;
+    top: -40px;
+    right: -18px;
+    padding: 4px 0;
+    width: 40px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.skills .contener .our-skills .prog-holder .prog span::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #1f2021 transparent transparent transparent;
+    top: -15px;
+    right: -6px;
+}
+/* End Skills */
+
+/* Start quote */
+.quote {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../images/quote.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000047;
+}
+
+.quote .contener {
+    position: relative;
+}
+
+.quote .contener q {
+    font-size: 25px;
+    margin-bottom: 25px;
+    display: block;
+    line-height: 1.8;
+}
+/* End quote */
