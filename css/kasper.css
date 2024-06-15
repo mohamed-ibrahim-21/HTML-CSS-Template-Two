@@ -1004,3 +1004,54 @@ header .contener nav .form i {
     }
 }
 /* End Subscribe */
+
+
+/* Start Footer */
+.footer {
+    padding-top: calc(var(--section-padding) / 2);
+    padding-bottom: calc(var(--section-padding) / 2);
+    position: relative;
+    background-image: url(../images/Footer\ image.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+}
+.footer .contener {
+    position: relative;
+}
+
+.footer img {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 125px;
+    height: 50px;
+}
+
+.footer p:not(.copy-right) {
+    padding: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    width: 250px;
+    margin: 0px auto 10px auto;
+}
+.footer .social-icons i {
+    padding: 10px 15px;
+}
+.footer .copy-right {
+    margin-top: 70px;
+    font-size: 13px;
+}
+.footer .copy-right span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+/* End Footer */
