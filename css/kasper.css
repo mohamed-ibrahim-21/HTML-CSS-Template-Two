@@ -831,3 +831,92 @@ header .contener nav .form i {
     line-height: 1.8;
 }
 /* End quote */
+
+/* Start pricing */
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.pricing .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 30px;
+}
+.pricing .plans .plan {
+    text-align: center;
+}
+.pricing .plans .plan .head {
+    background-color: #FCFCFC;
+    padding: 30px 20px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan .head h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+}
+.pricing .plans .plan .head span::before {
+    content: "$";
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+    right: 15px;
+}
+.pricing .plans .plan .head span::after {
+    content: "/MO";
+    font-size: 10px;
+    position: relative;
+    top: 0;
+    right: -5px;;
+}
+
+.pricing .plans .plan ul {
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan ul li{
+    padding: 20px;
+    position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.pricing .plans .plan .foot a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.pricing .Contact-text {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.pricing .Contact-link {
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 30px;
+    margin: 30px auto;
+}
+/* End pricing */
