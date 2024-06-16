@@ -1055,3 +1055,87 @@ header .contener nav .form i {
     font-weight: bold;
 }
 /* End Footer */
+
+
+/* Start Coontact Us */
+.coontact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.coontact .content {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .coontact .content {
+        flex-direction: column;
+    }
+}
+.coontact .content form {
+    flex-basis: 70%;
+}
+
+.coontact .content form .main-input {
+    display: block;
+    padding: 20px;
+    border: 1px solid var(--low-text); 
+    margin-bottom: 30px;
+    width: 100%;
+}
+.coontact .content form textarea.main-input{
+    height: 200px;
+} 
+.coontact .content form .main-input:focus {
+    outline: none;
+}
+
+.coontact .content form input[type="submit"]{
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 20px 50px;
+    color: white;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.coontact .content .info {
+    flex-basis: 25%;
+}
+@media (max-width: 767px) {
+    .coontact .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+.coontact .content .info h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.coontact .content .info .phone {
+    display: block;
+    color: var(--low-text);
+    margin-bottom: 5px;
+}
+.coontact .content .info h4:nth-of-type(2)  {
+    margin-top: 100px;
+}
+@media (max-width: 767px) {
+    .coontact .content .info h4:nth-of-type(2){
+        margin-top: 30px;
+    }
+}
+.coontact .content .info address {
+    color: var(--low-text);
+    line-height: 1.7;
+}
+@media (max-width: 767px) {
+    .coontact .content .info address {
+        margin-bottom: 40px;
+    }
+}
+/* End Coontact Us */
